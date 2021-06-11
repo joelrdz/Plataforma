@@ -1,7 +1,7 @@
-export default function Contact() {
+export default function ContactPage() {
   return (
     <>
-      Contact page
+      <h1 className="page-title">Contacto</h1>
     </>
   );
 }

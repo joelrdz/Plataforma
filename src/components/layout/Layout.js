@@ -5,7 +5,7 @@ export default function Layout({ children }) {
     <div className="app-wrapper">
       <div className="app-wrapper__content">
         <header>
-          <h1>Plataforma</h1>
+          <span className="logo">Plataforma</span>
         </header>
         <main>{children}</main>
       </div>
