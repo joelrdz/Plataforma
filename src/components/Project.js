@@ -17,7 +17,7 @@ export default function Project({ project }) {
   return (
     <>
       <div className="project" onClick={openModalHandler}>
-        <div>{project.name}</div>
+        <div className="project__title">{project.name}</div>
         <div className="project__thumb">{project.thumb ? <img src={require(`../assets/images/${project.thumb}`).default} alt={`Thumb de ${project.name}`} /> : 'No thumb'}</div>
       </div>
 

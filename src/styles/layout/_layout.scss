@@ -1,0 +1,102 @@
+.app-wrapper {
+  overflow: hidden;
+  width: 100%;
+  max-width: $app-wrapper-width;
+  margin: 0 auto;
+
+  &__content {
+    width: calc(100% - #{$sidebar-width});
+    float: left;
+
+    @include respond(tab-port) {
+      float: none;
+      width: 100%;
+    }
+
+    main {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      padding-bottom: 6rem;
+    }
+  }
+
+  &__sidebar {
+    padding: 2rem;
+    width: $sidebar-width;
+    float: right;
+    border-left: 1px solid white;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+
+      a {
+        &:link,
+        &:visited {
+          display: block;
+          padding: 1rem;
+          color: white;
+          text-decoration: none;
+          font-size: 2rem;
+        }
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    @include respond(tab-port) {
+      float: none;
+      width: 100%;
+      display: none;
+      background-color: black;
+      position: fixed;
+      top: 7rem;
+      left: 0;
+      width: 100vw;
+      height: calc(100% - 7rem);
+      border: 2px solid white;
+
+      &.open {
+        display: block;
+      }
+    }
+
+
+  }
+}
+
+.app-header {
+    padding: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+
+    display: flex;
+    justify-content: space-between;
+
+  .logo {
+    font-size: 40px;
+    user-select: none;
+  }
+
+  .toggle-box {
+    display: none;
+
+    button {
+      font-size: 2rem;
+      background-color: black;
+      color: white;
+      border: none;
+    }
+
+    @include respond(tab-port) {
+      display: block;
+    }
+  }
+}
+
+.page-title {
+  font-size: 30px;
+  font-weight: normal;
+}
