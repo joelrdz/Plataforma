@@ -59,40 +59,57 @@ const projects = [
     name: 'BALVIN',
     year: 2020,
     slug: 'balvin',
-    thumb: 'balvin-thumb.jpg',
-    images: [],
+    thumb: 'balvin-thumb.png',
+    images: [
+      'balvin-01.jpg',
+      'balvin-02.jpg',
+      'balvin-03.jpg',
+      'balvin-04.jpg'
+    ],
     description: `
       Un mundo de buena vibra, fantasía, felicidad y música, eso es Oasis.
       Los dos mayores exponentes a nivel mundial de la música urbana se unen para mostrar su mundo paralelo donde solo la genialidad es posible.
       Basándose en el pop art, el cover del álbum te transporta al universo de balvin y el conejo malo, donde dinosaurios, conejos y arcoiris conviven en el mundo/mente de ambos artistas.
       El trabajo detallado en 2D de Luis Bañuelos, sentó la idea inicial de la portada, y junto a chocotoycute pudo llevarse al brillante 3D que da la forma definitiva al arte del proyecto.
     `,
-    show: false
+    show: true
   },
   {
     id: 7,
     name: 'EDC',
     year: 2020,
     slug: 'edc',
-    thumb: 'edc-thumb.jpg',
-    images: [],
+    thumb: 'edc-thumb.png',
+    images: [
+      'edc-01.jpg',
+      'edc-02.jpg',
+      'edc-03.jpg',
+      'edc-04.jpg',
+      'edc-05.jpg'
+    ],
     description: `
       Dirección de arte, ilustración, animación, diseño de escenario y diseño de promocionales para festival.
       Para el Electric Daisy Carnival, el concepto se inclinó hacia una sobreabundancia del color y de elementos psicodélicos que resuenan con el ambiente de la música electrónica de baile (EDM). Se realizó un diseño global del festival, incluyendo escenografía, visuales, gráficos, y contenido promocional.
     `,
-    show: false
+    show: true
   },
   {
     id: 8,
     name: 'JUANES',
     year: 2020,
     slug: 'juanes',
-    thumb: 'juanes-thumb.jpg',
-    images: [],
+    thumb: 'juanes-thumb.png',
+    images: [
+      'juanes-01.jpg',
+      'juanes-02.jpg',
+      'juanes-03.jpg',
+      'juanes-04.jpg',
+      'juanes-05.jpg'
+    ],
     description: `
       La dirección de este proyecto se definió a partir del nombre del álbum. De la frase “Mis Planes Son Amarte” surgió un concepto integral para el arte del álbum y la comunicación oficial en medios. La narrativa que se muestra y el estilo gráfico lúdico son una forma de apelar a un segmento de mercado joven además de conservar la base de fans de un músico ya consolidado en el pop latinoamericano.
     `,
-    show: false
+    show: true
   },
   {
     id: 9,
@@ -153,10 +170,16 @@ const projects = [
     name: 'BLOW',
     year: 2021,
     slug: 'blow',
-    thumb: 'blow-thumb.jpg',
-    images: [],
+    thumb: 'blow-thumb.png',
+    images: [
+      'blow-01.jpg',
+      'blow-02.jpg',
+      'blow-03.jpg',
+      'blow-04.jpg',
+      'blow-05.jpg'
+    ],
     description: ``,
-    show: false
+    show: true
   },
 ];
 
