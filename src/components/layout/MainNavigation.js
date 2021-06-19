@@ -16,9 +16,9 @@ export default function MainNavigation(props) {
           <li>
             <Link to='/servicios' onClick={closeSidebarHandler}>Plataforma</Link>
           </li>
-          <li>
+          {/* <li>
             <Link to='/contacto' onClick={closeSidebarHandler}>Contacto</Link>
-          </li>
+          </li> */}
         </ul>
       </nav>
     </div>

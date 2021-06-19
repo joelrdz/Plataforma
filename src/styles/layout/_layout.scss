@@ -3,14 +3,22 @@
   width: 100%;
   max-width: $app-wrapper-width;
   margin: 0 auto;
+  position: relative;
 
   &__content {
     width: calc(100% - #{$sidebar-width});
-    float: left;
+
+    height: 100vh;
+    overflow: hidden;
+    overflow-y: auto;
+    padding: 3rem 0;
 
     @include respond(tab-port) {
       float: none;
       width: 100%;
+      height: unset;
+      overflow: unset;
+      padding: 0;
     }
 
     main {
@@ -23,8 +31,11 @@
   &__sidebar {
     padding: 2rem;
     width: $sidebar-width;
-    float: right;
     border-left: 1px solid white;
+    height: calc(100vh - 6rem);
+    position: absolute;
+    top: 3rem;
+    right: 0;
 
     ul {
       display: flex;
@@ -54,12 +65,29 @@
       position: fixed;
       top: 7rem;
       left: 0;
+      right: unset;
       width: 100vw;
       height: calc(100% - 7rem);
-      border: 2px solid white;
+      border: none;
 
-      &.open {
+      &.menu-open {
         display: block;
+      }
+
+      ul {
+        display: block;
+        margin-top: 4rem;
+
+        li {
+          text-align: center;
+          margin-bottom: 1rem;
+
+          a:link,
+          a:visited {
+            // display: inline-block;
+            font-size: 4rem;
+          }
+        }
       }
     }
 
@@ -74,6 +102,7 @@
 
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
   .logo {
     font-size: 40px;
@@ -83,11 +112,15 @@
   .toggle-box {
     display: none;
 
-    button {
+    .toggle {
       font-size: 2rem;
       background-color: black;
       color: white;
       border: none;
+
+      &.menu-open {
+        text-decoration: underline;
+      }
     }
 
     @include respond(tab-port) {
@@ -99,4 +132,5 @@
 .page-title {
   font-size: 30px;
   font-weight: normal;
+  margin-bottom: 3rem;
 }

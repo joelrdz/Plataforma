@@ -5,7 +5,7 @@ export default function ProjectsPage() {
   return (
     <>
       <h1 className="page-title">Proyectos</h1>
-      <div>
+      <div className="projects-list">
         {projects.map(project => {
           if (project.show) {
             return (

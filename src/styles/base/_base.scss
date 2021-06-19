@@ -14,14 +14,8 @@ html {
 
 body {
   box-sizing: border-box;
-
-  padding: 3rem;
   background-color: black;
   color: white;
-
-  @include respond(tab-port) {
-    padding: 0;
-  }
 }
 
 ::selection {

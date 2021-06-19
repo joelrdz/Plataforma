@@ -7,15 +7,17 @@ function Modal(props) {
 
   return (
     <div className="modal">
+      <div className="back-container">
+        <span onClick={closeModalHandler}>&#8592;</span>
+      </div>
       <div>
         <span>{project.name} </span>
-        <button onClick={closeModalHandler}>Close</button>
       </div>
       {project.description &&
         <div>
           <br />
           {project.description}
-          <br />
+          <br /><br />
         </div>
       }
       {project.images.length > 0 &&

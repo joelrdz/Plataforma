@@ -1,27 +1,29 @@
+.projects-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+
+  @include respond(phone) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 .project {
-  display: inline-block;
   cursor: pointer;
-  margin-right: 1rem;
-  margin-bottom: 1rem;
 
   &__title {
     font-size: 1.8rem;
   }
 
   &__thumb {
-    border: 1px solid white;
-    width: 30rem;
-    height: 30rem;
-    border-radius: 3px;
-
     img {
       width: 100%;
-      height: 100%;
-      border-radius: 3px;
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
     }
   }
 }
-
 
 .modal {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
@@ -47,9 +49,18 @@
   overflow: hidden;
   overflow-y: auto;
 
+  background-color: black;
+  color: white;
+  box-shadow: 0 3px 30px rgba(white, .15);
+
   img {
     max-width: 100%;
     height: auto;
+  }
+
+  .back-container {
+    text-align: left;
+    font-size: 3rem;
   }
 }
 
